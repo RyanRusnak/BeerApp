@@ -1,0 +1,35 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  beerName: MyString
+  breweryName: MyString
+  breweryID: MyString
+  price: MyString
+  style: MyString
+  ibu: MyString
+  abv: MyString
+  srmColor: MyString
+  season: MyString
+  region: MyString
+  mouthFeel: MyString
+  distribution: MyString
+  description: MyText
+  foodPairing: MyText
+  picture: MyString
+
+two:
+  beerName: MyString
+  breweryName: MyString
+  breweryID: MyString
+  price: MyString
+  style: MyString
+  ibu: MyString
+  abv: MyString
+  srmColor: MyString
+  season: MyString
+  region: MyString
+  mouthFeel: MyString
+  distribution: MyString
+  description: MyText
+  foodPairing: MyText
+  picture: MyString

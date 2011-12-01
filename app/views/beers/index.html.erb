@@ -1,0 +1,51 @@
+<h1>Listing beers</h1>
+
+<table>
+  <tr>
+    <th>Beername</th>
+    <th>Breweryname</th>
+    <th>Breweryid</th>
+    <th>Price</th>
+    <th>Style</th>
+    <th>Ibu</th>
+    <th>Abv</th>
+    <th>Srmcolor</th>
+    <th>Season</th>
+    <th>Region</th>
+    <th>Mouthfeel</th>
+    <th>Distribution</th>
+    <th>Description</th>
+    <th>Foodpairing</th>
+    <th>Picture</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @beers.each do |beer| %>
+  <tr>
+    <td><%= beer.beerName %></td>
+    <td><%= beer.breweryName %></td>
+    <td><%= beer.breweryID %></td>
+    <td><%= beer.price %></td>
+    <td><%= beer.style %></td>
+    <td><%= beer.ibu %></td>
+    <td><%= beer.abv %></td>
+    <td><%= beer.srmColor %></td>
+    <td><%= beer.season %></td>
+    <td><%= beer.region %></td>
+    <td><%= beer.mouthFeel %></td>
+    <td><%= beer.distribution %></td>
+    <td><%= beer.description %></td>
+    <td><%= beer.foodPairing %></td>
+    <td><%= beer.picture %></td>
+    <td><%= link_to 'Show', beer %></td>
+    <td><%= link_to 'Edit', edit_beer_path(beer) %></td>
+    <td><%= link_to 'Destroy', beer, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Beer', new_beer_path %>

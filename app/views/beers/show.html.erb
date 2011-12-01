@@ -1,0 +1,80 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Beername:</b>
+  <%= @beer.beerName %>
+</p>
+
+<p>
+  <b>Breweryname:</b>
+  <%= @beer.breweryName %>
+</p>
+
+<p>
+  <b>Breweryid:</b>
+  <%= @beer.breweryID %>
+</p>
+
+<p>
+  <b>Price:</b>
+  <%= @beer.price %>
+</p>
+
+<p>
+  <b>Style:</b>
+  <%= @beer.style %>
+</p>
+
+<p>
+  <b>Ibu:</b>
+  <%= @beer.ibu %>
+</p>
+
+<p>
+  <b>Abv:</b>
+  <%= @beer.abv %>
+</p>
+
+<p>
+  <b>Srmcolor:</b>
+  <%= @beer.srmColor %>
+</p>
+
+<p>
+  <b>Season:</b>
+  <%= @beer.season %>
+</p>
+
+<p>
+  <b>Region:</b>
+  <%= @beer.region %>
+</p>
+
+<p>
+  <b>Mouthfeel:</b>
+  <%= @beer.mouthFeel %>
+</p>
+
+<p>
+  <b>Distribution:</b>
+  <%= @beer.distribution %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @beer.description %>
+</p>
+
+<p>
+  <b>Foodpairing:</b>
+  <%= @beer.foodPairing %>
+</p>
+
+<p>
+  <b>Picture:</b>
+  <%= @beer.picture %>
+</p>
+
+
+<%= link_to 'Edit', edit_beer_path(@beer) %> |
+<%= link_to 'Back', beers_path %>

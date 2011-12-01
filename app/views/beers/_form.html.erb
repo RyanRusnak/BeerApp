@@ -1,0 +1,77 @@
+<%= form_for(@beer) do |f| %>
+  <% if @beer.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@beer.errors.count, "error") %> prohibited this beer from being saved:</h2>
+
+      <ul>
+      <% @beer.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :beerName %><br />
+    <%= f.text_field :beerName %>
+  </div>
+  <div class="field">
+    <%= f.label :breweryName %><br />
+    <%= f.text_field :breweryName %>
+  </div>
+  <div class="field">
+    <%= f.label :breweryID %><br />
+    <%= f.text_field :breweryID %>
+  </div>
+  <div class="field">
+    <%= f.label :price %><br />
+    <%= f.text_field :price %>
+  </div>
+  <div class="field">
+    <%= f.label :style %><br />
+    <%= f.text_field :style %>
+  </div>
+  <div class="field">
+    <%= f.label :ibu %><br />
+    <%= f.text_field :ibu %>
+  </div>
+  <div class="field">
+    <%= f.label :abv %><br />
+    <%= f.text_field :abv %>
+  </div>
+  <div class="field">
+    <%= f.label :srmColor %><br />
+    <%= f.text_field :srmColor %>
+  </div>
+  <div class="field">
+    <%= f.label :season %><br />
+    <%= f.text_field :season %>
+  </div>
+  <div class="field">
+    <%= f.label :region %><br />
+    <%= f.text_field :region %>
+  </div>
+  <div class="field">
+    <%= f.label :mouthFeel %><br />
+    <%= f.text_field :mouthFeel %>
+  </div>
+  <div class="field">
+    <%= f.label :distribution %><br />
+    <%= f.text_field :distribution %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_area :description %>
+  </div>
+  <div class="field">
+    <%= f.label :foodPairing %><br />
+    <%= f.text_area :foodPairing %>
+  </div>
+  <div class="field">
+    <%= f.label :picture %><br />
+    <%= f.text_field :picture %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
